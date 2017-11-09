@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="container">
+          <div class="row">
+               <div id="questionnaire">
+     			<h2>Friend Finder Questionnaire</h2>
+                    <hr>
+     			<h3>Tell us a bit about yourself:</h3>
+                    <h4>Your Name:</h4>
+                    <input type="text" name="" id="name" class="form-control" required="">
+                    <h4>Link to a Photo of You:</h4>
+                    <input type="text" name="" id="image" class="form-control" required="">
+                    <hr>
+                    <h3>Question 1</h3>
+                    <h4>You are secure enough in your own masculinity to skip in public.</h4>
+                    <form>
+                         <select id="question1" name="question1" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 2</h3>
+                    <h4>One should never get involved in a land war in Asia.</h4>
+                    <form>
+                         <select id="question2" name="question2" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 3</h3>
+                    <h4>You don't know what a server is, and at this point you're too afraid to ask.</h4>
+                    <form>
+                         <select id="question3" name="question3" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 4</h3>
+                    <h4>You think koalas are in fact horrible.</h4>
+                    <form>
+                         <select id="question4" name="question4" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 5</h3>
+                    <h4>Did everything just taste purple for a second?</h4>
+                    <form>
+                         <select id="question5" name="question5" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 6</h3>
+                    <h4>You once shot a bear... well, you think it was a bear. Oh god, did I kill that hairy guy?</h4>
+                    <form>
+                         <select id="question6" name="question6" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 7</h3>
+                    <h4>You're still a bit haunted by the memories that last question evoked.</h4>
+                    <form>
+                         <select id="question7" name="question7" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 8</h3>
+                    <h4>You think artisanal water is a scam, but you still really want to get in on the ground floor of it.</h4>
+                    <form>
+                         <select id="question8" name="question8" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 9</h3>
+                    <h4>Horses are like big riding dogs.</h4>
+                    <form>
+                         <select id="question9" name="question9" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                    </form>
+                    <h3>Question 10</h3>
+                    <h4>You're somewhat disappointed that I didn't want to come up with a tenth question.</h4>
+                    <form>
+                         <select id="question10" name="question10" required>
+                         <option disabled selected value>Select an Option</option>
+                         <option value="1">1 (Strongly Disagree)</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (Strongly Agree)</option>
+                         </select>
+                         <br>
+                         <br>
+                    </form>
+                    <button type="submit" value ="Submit" class="btn btn-lg btn-primary" id="submitButton">Submit</button>
+                    <hr>
+               </div>
+          </div>
+		<div class="row">
+            <h5><a href="/api/friends"> Friends List </a> | <a href="https://github.com/jachaffee/FriendFinder"> GitHub Repo </a></h5>
+          </div>
+	</div>
+
+     <div id="myModal" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal"></button>
+             <h2 class="modal-title">Best Match</h2>
+           </div>
+           <div class="modal-body text-center">
+             <h2 id="nameOfMatch"></h2>
+             <p id="imageHolder"></p>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+     </div>
+     </div>
+
+	<script type="text/javascript">
+
+     $('#submitButton').on("click", function(){
+          var newFriend =
+               {
+               name: $("#name").val().trim(),
+               photo: $("#image").val().trim(),
+               scores:[
+                    $("#question1").val().trim(),
+                    $("#question2").val().trim(), 
+                    $("#question3").val().trim(), 
+                    $("#question4").val().trim(), 
+                    $("#question5").val().trim(), 
+                    $("#question6").val().trim(), 
+                    $("#question7").val().trim(), 
+                    $("#question8").val().trim(), 
+                    $("#question9").val().trim(),
+                    $("#question10").val().trim()
+               ]
+          };
+          var currentURL = window.location.origin;
+          console.log(newFriend);
+          
+          $.post( currentURL + "/api/friends", newFriend)
+               .done(function(data){
+                   
+                    var oldFriends = [];
+                    for (var i = 0; i < data.length; i++) {
+                              oldFriends.push(data[i].scores);
+                    }
+                    var score = 0;
+                    var scoreArray = [];
+                    function difference(a, b) { return Math.abs(a - b); }
+                    for (var i = 0; i < oldFriends.length-1; i++) {
+	                    for (var j = 0; j < 10; j++) {
+  	                    score+= difference(oldFriends[i][j], oldFriends[oldFriends.length-1][j]);
+                         }
+	                    scoreArray.push(score);
+                         score = 0;
+                    }
+                    var indexInArray = scoreArray.indexOf(Math.min(...scoreArray));
+                   
+                    $("#nameOfMatch").html(data[indexInArray].name);
+                    $("#imageHolder").html(data[indexInArray].photo);
+                    $("#myModal").modal('toggle');
+               });
+               var currentURL = window.location.origin;
+          return false;
+          });
+	</script>
+
+</body>
+</html>
