@@ -157,11 +157,11 @@
          <div class="modal-content">
            <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal"></button>
-             <h2 class="modal-title">Best Match</h2>
+             <h2 class="modal-title">Your New Best Friend</h2>
            </div>
            <div class="modal-body text-center">
-             <h2 id="nameOfMatch"></h2>
-             <p id="imageHolder"></p>
+             <h2 id="matchName"></h2>
+             <p id="matchImage"></p>
            </div>
            <div class="modal-footer">
              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -173,11 +173,11 @@
 	<script type="text/javascript">
 
      $('#submitButton').on("click", function(){
-          var newFriend =
-               {
+          var newUser =
+            {
                name: $("#name").val().trim(),
                photo: $("#image").val().trim(),
-               scores:[
+               answers:[
                     $("#question1").val().trim(),
                     $("#question2").val().trim(), 
                     $("#question3").val().trim(), 
@@ -189,32 +189,32 @@
                     $("#question9").val().trim(),
                     $("#question10").val().trim()
                ]
-          };
+          	};
           var currentURL = window.location.origin;
-          console.log(newFriend);
+          console.log(newUser);
           
-          $.post( currentURL + "/api/friends", newFriend)
+          $.post( currentURL + "/api/friends", newUser)
                .done(function(data){
                    
-                    var oldFriends = [];
+                    var userArray = [];
                     for (var i = 0; i < data.length; i++) {
-                              oldFriends.push(data[i].scores);
+                              userArray.push(data[i].answers);
                     }
-                    var score = 0;
-                    var scoreArray = [];
+                    var match = 0;
+                    var matchArray = [];
                     function difference(a, b) { return Math.abs(a - b); }
-                    for (var i = 0; i < oldFriends.length-1; i++) {
+                    for (var i = 0; i < userArray.length-1; i++) {
 	                    for (var j = 0; j < 10; j++) {
-  	                    score+= difference(oldFriends[i][j], oldFriends[oldFriends.length-1][j]);
+  	                    match+= difference(userArray[i][j], userArray[userArray.length-1][j]);
                          }
-	                    scoreArray.push(score);
-                         score = 0;
+	                    matchArray.push(match);
+                         match = 0;
                     }
-                    var indexInArray = scoreArray.indexOf(Math.min(...scoreArray));
+                    var indexArray = matchArray.indexOf(Math.min(...matchArray));
                    
-                    $("#nameOfMatch").html(data[indexInArray].name);
-                    $("#imageHolder").html(data[indexInArray].photo);
-                    $("#myModal").modal('toggle');
+                    $("#matchName").html(data[indexArray].name);
+                    $("#matchImage").html(data[indexArray].photo);
+                    $("#myModal").modal("toggle");
                });
                var currentURL = window.location.origin;
           return false;
