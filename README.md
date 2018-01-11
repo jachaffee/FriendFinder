@@ -6,8 +6,8 @@
 
 ## Screen Shots
 
-! [ Welcome screen ] ( images/Welcome_Screen.png )
+![ Welcome screen ]( /images/Welcome_Screen.png )
 
-! [ Questionnaire ] ( images/Questionnaire.png )
+![ Questionnaire ]( images/Questionnaire.png )
 
-! [ Friend Match ] ( images/Friend_Match.png )
+![ Friend Match ]( images/Friend_Match.png )
